@@ -9,31 +9,31 @@ This is a review and experimental code for different GANs models trained on MNIS
 
 ## Configure the code on your environment
 ```
-## 1. Create your python 3.+ environment
+## 1. Create your python 3.+ environment (any virtual env tool)
 
 ## 2. Install dependcies
->> pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Linear GAN Batch nromalization
 ```
 ## if you want to run the code on GPU specify (--device gpu)
->> python main.py --model linear --bn batch --device cpu
+python main.py --model linear --bn batch --device cpu
 ```
 
 ### Linear GAN without Batch nromalization
 ```
->> python main.py --model linear --bn nobatch --device cpu
+python main.py --model linear --bn nobatch --device cpu
 ```
 
 ### DCGAN with Batch nromalization
 ```
->> python main.py --model conv --bn batch
+python main.py --model conv --bn batch
 ```
 
 ### DCGAN with Spectral nromalization
 ```
->> python main.py --model conv --bn spectral
+python main.py --model conv --bn spectral
 ```
 -------------
 

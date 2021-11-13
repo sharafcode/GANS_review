@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ### Linear GAN Batch nromalization
 ```
-## if you want to run the code on GPU specify (--device gpu)
+## if you want to run the code on GPU specify (--device cuda)
 python main.py --model linear --bn batch --device cpu
 ```
 

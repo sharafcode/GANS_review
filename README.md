@@ -37,6 +37,13 @@ python main.py --model conv --bn spectral
 ```
 -------------
 
-### Running on colab
+### Running on ColabGAN
 - Clone the whole REPO on a colab notebook environment
 - work with the notebook `main.ipynb` you will find ready-code to run different models and also a sample results saved in the notebook
+
+<strong>Steps as follows for colab: </strong>
+1. Open a new colab notebook
+2. Clone the repo on your colab Notebook <br/>
+`!git clone https://github.com/sharafcode/GANS_review.git`
+3. Copy the code of this notebook `main.ipynb` to your colab notebook
+4. START PLAYING 

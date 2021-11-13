@@ -7,7 +7,7 @@ def get_args():
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--model", default="linear",
-                        help="Linear or Conv GANS ['linear' / 'dcgan']")
+                        help="Linear or Conv GANS ['linear' / 'conv']")
     parser.add_argument("--bn", default='batch',
                         help="Applying Batch normalization to the model or not ['nobatch' / 'batch' / 'spectral']")
     parser.add_argument("--device", default="cpu",
@@ -19,11 +19,11 @@ def get_args():
 if __name__ == "__main__":
     args = get_args()
     args.model
-    if args.bn =='batch':
+    if args.bn.lower() =='batch':
         batch_norm = True
-    if args.bn == 'nobatch':
+    if args.bn.lower() == 'nobatch':
         batch_norm = False
-    if args.bn == 'spectral':
+    if args.bn.lower() == 'spectral':
         spectral_norm=True
 
 
